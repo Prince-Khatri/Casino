@@ -480,7 +480,7 @@ void lose(int a,int cChoice){
     char ch='n';
     cout<<setw(35)<<"";
     cin>>ch;
-    if(ch=='y'||ch=='Y'){
+    if((ch=='y'||ch=='Y')&&coins>0){
         cout<<"Next rount in ";
         //3 2 1
         cout<<"3 ";
@@ -512,6 +512,9 @@ void lose(int a,int cChoice){
         play1();
 
     }
+    else if(ch=='n'||ch=='N'){
+        system("clear");
+    }
     else {
         system("clear");
         cout<<setw(62-11)<<" "<<setfill('_')<<setw(12)<<" "<<setfill(' ')<<endl;
@@ -539,7 +542,7 @@ void lose(int a,int cChoice){
         player::bet(bet);
 
         if(bet==0){
-            cout<<"Unexpected Input!\n\tProgram Terminated"<<endl;
+            cout<<"\nUnexpected Input!\n\tProgram Terminated"<<endl;
             return ;
         }
 
@@ -598,8 +601,8 @@ void lose(int a,int cChoice){
 
     void bet(int &a){
         static int trial=2;
-        casinoUI printer;
-        cout<<"Coins:"<<coins<<endl;
+        casinoUI printer
+
         string B[9]={
                     "* * *  ","*     *","*     *","*     *","* * *  ","*     *","*     *","*     *","* * *  ",
         };
@@ -626,7 +629,7 @@ void lose(int a,int cChoice){
         cout<<endl;
         cout<<"\t\t\t\t\t    ";
         cin>>a;
-        
+        cout<<endl;
         
         while ((a > coins || a == 0) && trial!=0){
 
@@ -795,17 +798,26 @@ void firstPage(){
         }
         }
 
+    
+}
 
-
-
-}}
+    system("clear");
+}
 
 
 
 
 int main(){
+
+    system("clear");
+
+    cout<<"Enter Player Name:";string pName;
+    cin>>pName;
+    cout<<"Number of coins you have:";int pCoins;
+    cin>>pCoins;
+    system("clear");
     firstPage();
-    player p("Prince",500);
+    player p(pName,pCoins);
     p.play1();
     return 0;
 

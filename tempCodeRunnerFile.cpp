@@ -1,1 +1,2 @@
-p
+cout.flush();
+    system("clear");
