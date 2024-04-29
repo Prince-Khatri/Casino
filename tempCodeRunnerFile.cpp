@@ -1,2 +1,0 @@
-cout.flush();
-    system("clear");
