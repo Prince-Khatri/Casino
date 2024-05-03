@@ -1,41 +1,32 @@
-# Project Title
+# Casino C++ Project
 
-Brief description of your project.
+This is a C++ project for a simple casino game where players choose from four options to win or lose.
 
-## Table of Contents
+## Description
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-
-## About
-
-A brief introduction to your project.
+This project is a simple casino game implemented in C++. It includes a single game where players choose from four options to determine their outcome.
 
 ## Features
 
-- List of features or functionalities of your project.
+- Single-option casino game
+- Simple user interface
 
 ## Getting Started
 
-Instructions on how to get started with your project.
-
 ### Prerequisites
 
-List of any prerequisites or dependencies required to use your project.
+- C++ compiler installed on your system.
 
 ### Installation
 
-Step-by-step instructions on how to install your project.
+1. Clone the repository to your local machine.
+2. Compile the `casino.cpp` file using a C++ compiler.
+3. Run the compiled executable file.
 
 ## Usage
 
-Instructions on how to use your project.
+Follow the on-screen instructions to play the game. Choose one of the four options provided to determine your outcome.
 
 ## Contributing
 
-Guidelines for contributing to your project, if applicable.
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
